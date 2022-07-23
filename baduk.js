@@ -170,10 +170,9 @@ window.onload = function () {
     count--; // 흑 or 백 차례를 한 수 뒤로 물림
 
     if (count == 0) {
-      withdrawBtn.attr("disabled", true);
-      judgeBtn.attr("disabled", true);
+      location.reload()
     }
-
+    
     if (deadStoneHistory.slice(-1)[0] != [0, 0]) {
       // '무르기' 직전 단계에서 사석이 발생했다면, 발생한 만큼 [흑, 백] 사석 합계에서 차감
       deadStone = [deadStone[0] - deadStoneHistory.slice(-1)[0][0], deadStone[1] - deadStoneHistory.slice(-1)[0][1]];
@@ -336,8 +335,7 @@ window.onload = function () {
           board[xyToIndex(x, y)] = setColor(count);
           count++;
           drawBoard(x, y);
-          // 무르기, 계가신청 버튼 활성화
-          withdrawBtn.attr("disabled", false);
+          // 계가신청 버튼 활성화
           judgeBtn.attr("disabled", false);
         } 
         if (countdown !== undefined && total !== undefined) {
