@@ -1,0 +1,79 @@
+:root {
+  --lightgrey--: rgb(186, 181, 181);
+  --grey--: rgb(128, 125, 125);
+  --blue--: rgb(135, 206, 235);
+  --white--: rgb(249, 247, 247);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  position: relative;
+  top: 30px;
+}
+
+.loginNav {
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.login {
+  position: relative;
+  margin: 0 auto;
+  top: 150px;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid var(--grey--);
+  border-radius: 5px;
+}
+
+.login_container input {
+  width: 150px;
+}
+
+.login_title {
+  margin-top: 0px;
+  margin-bottom: 200px;
+}
+
+.account {
+  position: relative;
+  display: block;
+  margin-bottom: 3px;
+  padding: 3px;
+  border: 2px solid var(--lightgrey--);
+  border-radius: 3px;
+}
+
+.hidden {
+  display: none;
+}
+
+#id {
+  bottom: 100px;
+}
+
+#pw {
+  bottom: 80px;
+}
+
+#login {
+  width: 100%;
+  background-color: var(--blue--);
+  border-color: transparent;
+  color: var(--white--);
+  bottom: 50px;
+}
+
+
+
+
+
