@@ -47,12 +47,23 @@
     <h1 class="login_title">바둑 BADUK</h1>
     <form id="login-form">
       <div class="login_container">
-        <input type="text" placeholder="아이디" id="id" class="account" autofocus>
-        <input type="password" placeholder="비밀번호" id="pw" class="account">
+        <input type="text" placeholder="아이디" id="login-id" class="account" autofocus>
+        <input type="password" placeholder="비밀번호" id="login-pw" class="account">
         <input type="submit" value="로그인" id="login" class="account">
       </div>
     </form>
   </main>
+
+  <div id="modal" class="modal-overlay">
+    <div class="modal-window">
+      <div class="title">
+        <h2>로그인 성공</h2>
+      </div>
+      <div class="close-area">X</div>
+      <div class="content"></div>
+    </div>
+  </div>
+
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
