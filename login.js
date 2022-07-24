@@ -1,8 +1,10 @@
-const loginNav = $('.loginNav');
-const login = $('.login');
 const baduk = $('.baduk');
-const login_id = $('#login-id');
+
+const login = $('.login');
+const loginNav = $('.loginNav');
 const loginForm = $('#login-form');
+const login_id = $('#login-id');
+
 const modal = document.getElementById("modal")
 const content = $('.content');
 const closeBtn = modal.querySelector(".close-area")
@@ -12,7 +14,7 @@ loginForm.submit(onLoginSubmit);
 function onLoginSubmit(event) {
   event.preventDefault();
   const userId = login_id.val();
-  content.text(`${userId}님 환영합니다!`);
+  content.text(`${userId} 님 환영합니다!`);
   modal.style.display = "flex"
   login.addClass('hidden');
   loginNav.addClass('hidden');

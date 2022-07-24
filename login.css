@@ -3,6 +3,8 @@
   --grey--: rgb(128, 125, 125);
   --blue--: rgb(135, 206, 235);
   --white--: rgb(249, 247, 247);
+  --modal-blue--: rgba( 69, 139, 197, 0.70 );
+  --modal-grey: rgba(27, 27, 27, 0.25);
 }
 
 * {
@@ -19,7 +21,6 @@ h1 {
   font-size: 24px;
   text-align: center;
 }
-
 
 .login {
   position: relative;
@@ -83,22 +84,15 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
+  background: var(--modal-grey);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 #modal .modal-window {
-  background: rgba( 69, 139, 197, 0.70 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
+  background: var(--modal-blue--);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  width: 400px;
-  height: 500px;
+  width: 500px;
+  height: 100px;
   position: relative;
   top: -100px;
   padding: 10px;
@@ -106,8 +100,7 @@ h1 {
 #modal .title {
   padding-left: 10px;
   display: inline;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
+  color: var(--white--);
   
 }
 #modal .title h2 {
@@ -118,16 +111,13 @@ h1 {
   float: right;
   padding-right: 10px;
   cursor: pointer;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
+  color: var(--white--);
 }
 
 #modal .content {
   margin-top: 20px;
   padding: 0px 10px;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
+  color: var(--white--);
 }
-
 
 
