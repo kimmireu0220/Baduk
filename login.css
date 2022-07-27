@@ -3,7 +3,7 @@
   --grey--: rgb(128, 125, 125);
   --blue--: rgb(135, 206, 235);
   --white--: rgb(249, 247, 247);
-  --modal-blue--: rgba( 69, 139, 197, 0.70 );
+  --modal-blue--: rgb(67, 136, 193);
   --modal-grey: rgba(27, 27, 27, 0.25);
 }
 
@@ -80,10 +80,10 @@ h1 {
   position: absolute;
   left: 0;
   top: 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: var(--modal-grey);
   border-radius: 10px;
 }
@@ -94,18 +94,16 @@ h1 {
   width: 500px;
   height: 100px;
   position: relative;
-  top: -100px;
+  top: 25px;
   padding: 10px;
 }
-#modal .title {
+#modal .modalTitle {
+  font-size: 24px;
   padding-left: 10px;
   display: inline;
   color: var(--white--);
-  
 }
-#modal .title h2 {
-  display: inline;
-}
+
 #modal .close-area {
   display: inline;
   float: right;
