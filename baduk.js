@@ -163,7 +163,7 @@ window.onload = function () {
   // '무르기' 함수
   withdraw = () => {
     if (count == 0) {
-      location.reload()
+      location.reload();
     }    
     
     boardCopyHistory.pop(); // 무르면서 가장 최근 바둑판 모양은 날려버림
