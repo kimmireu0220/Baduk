@@ -162,16 +162,16 @@ window.onload = function () {
 
   // '무르기' 함수
   withdraw = () => {
+    if (count == 0) {
+      location.reload()
+    }    
+    
     boardCopyHistory.pop(); // 무르면서 가장 최근 바둑판 모양은 날려버림
     board = boardCopyHistory.slice(-1)[0]; // 바둑판 마지막 모양 
     boardCopy = Object.assign([], board);
     boardCopyHistory[boardCopyHistory.length - 1] = boardCopy;
     
     count--; // 흑 or 백 차례를 한 수 뒤로 물림
-
-    if (count == 0) {
-      location.reload()
-    }
     
     if (deadStoneHistory.slice(-1)[0] != [0, 0]) {
       // '무르기' 직전 단계에서 사석이 발생했다면, 발생한 만큼 [흑, 백] 사석 합계에서 차감
